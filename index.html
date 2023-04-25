@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Derek Chen</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
+
 <body>
-    <p>Under Construction</p>
+    <script>
+        function fun() {
+            let sem = document.getElementById("semester-sel").value;
+            let url = 'https://www.youtube.com/watch?v=5tMdtREX78E';
+            switch (sem) {
+                case "F2022":
+                    url = 'https://derec4.github.io/ut-grade-data/2022%20Fall.json';
+                    break;
+                case "S2022":
+                    url = 'https://derec4.github.io/ut-grade-data/2022%20Summer.json';
+                    break;
+                case "Sp2022":
+                    url = 'https://derec4.github.io/ut-grade-data/2022%20Spring.json';
+                    break;
+                case "F2021":
+                    url = 'https://derec4.github.io/ut-grade-data/2021%20Fall.json';
+                    break;
+            }
+            window.location.href = url;
+        } 
+    </script>
+    <button onclick="fun()"> click me !</button>
+    <label for="semester-sel">Access a Dataset:</label>
+    <select name="dataset" id="semester-sel">
+        <option value="">---</option>
+        <option value="F2022">Fall 2022</option>
+        <option value="S2022">Summer 2022</option>
+        <option value="Sp2022">Spring 2022</option>
+        <option value="F2021">Fall 2021</option>
+    </select>
 </body>
+
 </html>
