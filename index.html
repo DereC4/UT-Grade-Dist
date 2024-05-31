@@ -13,36 +13,21 @@
         function fun() {
             let sem = document.getElementById("semester-sel").value;
             let url = 'https://www.youtube.com/watch?v=5tMdtREX78E';
-            // switch (sem) {
-            //     case "F2022":
-            //         url = 'https://derec4.github.io/ut-grade-data/2022%20Fall.json';
-            //         break;
-            //     case "S2022":
-            //         url = 'https://derec4.github.io/ut-grade-data/2022%20Summer.json';
-            //         break;
-            //     case "Sp2022":
-            //         url = 'https://derec4.github.io/ut-grade-data/2022%20Spring.json';
-            //         break;
-            //     case "F2021":
-            //         url = 'https://derec4.github.io/ut-grade-data/2021%20Fall.json';
-            //         break;
-            // }
-                const semesterURLs = {
-        'f2023': 'https://derec4.github.io/ut-grade-data/2023%20Fall.json',
-        's2023': 'https://derec4.github.io/ut-grade-data/2023%20Summer.json',
-        'sp2023': 'https://derec4.github.io/ut-grade-data/2023%20Spring.json',
-        'f2022': 'https://derec4.github.io/ut-grade-data/2022%20Fall.json',
-        's2022': 'https://derec4.github.io/ut-grade-data/2022%20Summer.json',
-        'sp2022': 'https://derec4.github.io/ut-grade-data/2022%20Spring.json',
-        'f2021': 'https://derec4.github.io/ut-grade-data/2021%20Fall.json',
-        's2021': 'https://derec4.github.io/ut-grade-data/2021%20Summer.json',
-        'sp2021': 'https://derec4.github.io/ut-grade-data/2021%20Spring.json',
-        'f2020': 'https://derec4.github.io/ut-grade-data/2020%20Fall.json',
-        's2020': 'https://derec4.github.io/ut-grade-data/2020%20Summer.json',
-        'sp2020': 'https://derec4.github.io/ut-grade-data/2020%20Spring.json',
-    };    
+            const semesterURLs = {
+                'f2023': 'https://derec4.github.io/ut-grade-data/2023%20Fall.json',
+                's2023': 'https://derec4.github.io/ut-grade-data/2023%20Summer.json',
+                'sp2023': 'https://derec4.github.io/ut-grade-data/2023%20Spring.json',
+                'f2022': 'https://derec4.github.io/ut-grade-data/2022%20Fall.json',
+                's2022': 'https://derec4.github.io/ut-grade-data/2022%20Summer.json',
+                'sp2022': 'https://derec4.github.io/ut-grade-data/2022%20Spring.json',
+                'f2021': 'https://derec4.github.io/ut-grade-data/2021%20Fall.json',
+                's2021': 'https://derec4.github.io/ut-grade-data/2021%20Summer.json',
+                'sp2021': 'https://derec4.github.io/ut-grade-data/2021%20Spring.json',
+                'f2020': 'https://derec4.github.io/ut-grade-data/2020%20Fall.json',
+                's2020': 'https://derec4.github.io/ut-grade-data/2020%20Summer.json',
+                'sp2020': 'https://derec4.github.io/ut-grade-data/2020%20Spring.json',
+            };    
             url = semesterURLs[sem] || 'https://derec4.github.io/ut-grade-data/2022%20Fall.json';
-
             window.location.href = url;
         } 
     </script>
